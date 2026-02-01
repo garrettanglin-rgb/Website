@@ -9,9 +9,10 @@
     --color-primary: #1a2a4a;        /* Deep navy blue */
     --color-primary-dark: #0f1a2e;   /* Darker navy */
     --color-primary-light: #2d4a7c;  /* Lighter navy */
-    --color-accent: #c9a227;         /* Gold */
-    --color-accent-dark: #a88620;    /* Darker gold */
-    --color-accent-light: #dbb84a;   /* Lighter gold */
+    --color-accent: #d4c5b0;         /* Warm cream/taupe */
+    --color-accent-dark: #b8a690;    /* Darker cream */
+    --color-accent-light: #ebe4d9;   /* Lighter cream */
+    --color-accent-text: #2d4a7c;    /* Navy for text accents */
     --color-white: #ffffff;
     --color-off-white: #f8f9fa;
     --color-gray-100: #f1f3f5;
@@ -165,7 +166,7 @@ p:last-child {
 }
 
 .text-accent {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 /* ============================================
@@ -214,7 +215,7 @@ p:last-child {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     margin-bottom: var(--space-3);
 }
 
@@ -314,7 +315,7 @@ p:last-child {
     align-items: center;
     font-size: var(--text-sm);
     font-weight: 500;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     transition: all var(--transition-fast);
 }
 
@@ -325,7 +326,7 @@ p:last-child {
 }
 
 .link-arrow:hover {
-    color: var(--color-accent-dark);
+    color: var(--color-primary);
 }
 
 .link-arrow:hover::after {
@@ -543,7 +544,7 @@ p:last-child {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=2000&q=80');
+    background-image: url('https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=2000&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -679,7 +680,7 @@ p:last-child {
     font-family: var(--font-heading);
     font-size: var(--text-3xl);
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 .stat-label {
@@ -805,7 +806,7 @@ p:last-child {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     margin-bottom: var(--space-4);
 }
 
@@ -827,7 +828,7 @@ p:last-child {
 }
 
 .attorney-contact a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 /* ============================================
@@ -858,7 +859,7 @@ p:last-child {
     width: 48px;
     height: 48px;
     margin: 0 auto var(--space-4);
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 .why-icon svg {
@@ -931,7 +932,7 @@ p:last-child {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     margin-bottom: var(--space-3);
 }
 
@@ -1046,7 +1047,7 @@ p:last-child {
 .contact-icon {
     width: 24px;
     height: 24px;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     flex-shrink: 0;
     margin-top: var(--space-1);
 }
@@ -1077,7 +1078,7 @@ p:last-child {
 }
 
 .contact-item a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 .social-links {
@@ -1598,7 +1599,7 @@ p:last-child {
 .practice-detail-icon {
     width: 64px;
     height: 64px;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     margin-bottom: var(--space-6);
 }
 
@@ -1703,7 +1704,7 @@ p:last-child {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     margin-bottom: var(--space-6);
 }
 
@@ -1729,7 +1730,7 @@ p:last-child {
 .attorney-contact-item svg {
     width: 16px;
     height: 16px;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 .attorney-contact-item:hover {
@@ -1845,7 +1846,7 @@ p:last-child {
 .contact-icon-large {
     width: 32px;
     height: 32px;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     flex-shrink: 0;
 }
 
@@ -1873,7 +1874,7 @@ p:last-child {
 }
 
 .contact-item-large a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 .text-muted {
@@ -2047,7 +2048,7 @@ p:last-child {
     width: 48px;
     height: 48px;
     flex-shrink: 0;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
 }
 
 .difference-icon svg {
