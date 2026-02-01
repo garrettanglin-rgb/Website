@@ -1686,6 +1686,13 @@ p:last-child {
     font-weight: 600;
 }
 
+.attorney-profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+}
+
 .attorney-profile-name {
     font-size: var(--text-4xl);
     margin-bottom: var(--space-2);
