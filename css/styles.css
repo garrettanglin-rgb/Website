@@ -1683,11 +1683,20 @@ p:last-child {
 
     /* Section Headers */
     .section-title {
-        font-size: var(--text-3xl);
+        font-size: 1.5rem;
     }
 
     .section-subtitle {
         font-size: var(--text-xs);
+    }
+
+    /* Intro Section */
+    .intro-lead {
+        font-size: var(--text-base);
+    }
+
+    .intro-text p {
+        font-size: var(--text-sm);
     }
 
     /* Why Cards */
