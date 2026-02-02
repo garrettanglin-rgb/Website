@@ -9,8 +9,8 @@
     --color-primary: #1a2a4a;        /* Deep navy blue */
     --color-primary-dark: #0f1a2e;   /* Darker navy */
     --color-primary-light: #2d4a7c;  /* Lighter navy */
-    --color-accent: #e8e4e0;         /* Light warm grey */
-    --color-accent-dark: #c9c4be;    /* Medium warm grey */
+    --color-accent: #d4cfc9;         /* Warm cream */
+    --color-accent-dark: #bfb9b2;    /* Darker cream for hover */
     --color-accent-light: #f5f3f1;   /* Very light grey */
     --color-accent-text: #2d4a7c;    /* Navy for text accents */
     --color-white: #ffffff;
