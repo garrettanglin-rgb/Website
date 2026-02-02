@@ -9,9 +9,9 @@
     --color-primary: #1a2a4a;        /* Deep navy blue */
     --color-primary-dark: #0f1a2e;   /* Darker navy */
     --color-primary-light: #2d4a7c;  /* Lighter navy */
-    --color-accent: #d4c5b0;         /* Warm cream/taupe */
-    --color-accent-dark: #b8a690;    /* Darker cream */
-    --color-accent-light: #ebe4d9;   /* Lighter cream */
+    --color-accent: #e8e4e0;         /* Light warm grey */
+    --color-accent-dark: #c9c4be;    /* Medium warm grey */
+    --color-accent-light: #f5f3f1;   /* Very light grey */
     --color-accent-text: #2d4a7c;    /* Navy for text accents */
     --color-white: #ffffff;
     --color-off-white: #f8f9fa;
@@ -374,43 +374,39 @@ p:last-child {
 .logo {
     display: flex;
     align-items: center;
-    gap: var(--space-3);
+    gap: var(--space-2);
 }
 
 .logo-mark {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: var(--font-heading);
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
     font-weight: 600;
     color: var(--color-primary);
-    border-right: 3px solid var(--color-accent);
-    padding-right: var(--space-3);
+}
+
+.logo-divider {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 300;
+    color: var(--color-accent-dark);
+    margin: 0 var(--space-1);
 }
 
 .logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-
-.logo-name {
     font-family: var(--font-heading);
     font-size: var(--text-xl);
     font-weight: 600;
     color: var(--color-primary);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
-.logo-suffix {
-    font-family: var(--font-heading);
-    font-size: var(--text-lg);
-    font-weight: 400;
-    color: var(--color-primary);
-    letter-spacing: 0.1em;
+.footer .logo-mark,
+.footer .logo-text {
+    color: var(--color-white);
+}
+
+.footer .logo-divider {
+    color: var(--color-accent);
 }
 
 .logo-img {
