@@ -2236,6 +2236,12 @@ p:last-child {
     color: var(--color-primary);
 }
 
+.insight-source {
+    font-weight: 500;
+    color: var(--color-accent-text);
+    font-style: italic;
+}
+
 .insights-articles-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
