@@ -711,9 +711,15 @@ p:last-child {
    ============================================ */
 
 .practice-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-6);
+}
+
+.practice-grid .practice-card {
+    flex: 0 0 calc(25% - var(--space-6));
+    max-width: calc(25% - var(--space-6));
 }
 
 .practice-card {
