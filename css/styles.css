@@ -1657,17 +1657,20 @@ p:last-child {
 
 /* Practice Area Quick Nav Cards */
 .practice-nav-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-4);
-    margin-top: var(--space-10);
+    margin-top: var(--space-6);
 }
 
 .practice-nav-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--space-6);
+    justify-content: center;
+    width: 160px;
+    padding: var(--space-5);
     background-color: var(--color-white);
     border-radius: var(--radius-lg);
     text-align: center;
@@ -1716,6 +1719,9 @@ p:last-child {
 }
 
 .practice-detail-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -1724,10 +1730,10 @@ p:last-child {
 }
 
 .practice-detail-icon {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     color: var(--color-accent-text);
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
 }
 
 .practice-detail-icon svg {
@@ -1736,8 +1742,9 @@ p:last-child {
 }
 
 .practice-detail-title {
-    font-size: var(--text-4xl);
-    margin-bottom: var(--space-6);
+    font-size: var(--text-2xl);
+    margin-bottom: 0;
+    line-height: 1.3;
 }
 
 .practice-detail p {
@@ -1780,8 +1787,8 @@ p:last-child {
 }
 
 @media (max-width: 992px) {
-    .practice-nav-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .practice-nav-card {
+        width: 140px;
     }
 
     .practice-detail-grid {
@@ -1790,16 +1797,20 @@ p:last-child {
     }
 
     .practice-detail-sidebar {
+        flex-direction: row;
+        justify-content: flex-start;
         text-align: left;
-        display: flex;
-        align-items: center;
         gap: var(--space-4);
     }
 
     .practice-detail-icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 0;
+    }
+
+    .practice-detail-title {
+        font-size: var(--text-xl);
     }
 
     .practice-detail {
@@ -1823,13 +1834,8 @@ p:last-child {
         grid-template-columns: 1fr;
     }
 
-    .practice-nav-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-3);
-    }
-
     .practice-nav-card {
-        padding: var(--space-4);
+        width: calc(50% - var(--space-2));
     }
 
     .practice-nav-card svg {
