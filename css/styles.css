@@ -410,9 +410,9 @@ p:last-child {
 }
 
 .logo-img {
-    height: 75px;
+    height: 95px;
     width: auto;
-    max-width: 300px;
+    max-width: 380px;
     object-fit: contain;
     transition: opacity var(--transition-fast);
 }
