@@ -63,7 +63,7 @@
     /* Layout */
     --container-max: 1280px;
     --container-narrow: 900px;
-    --header-height: 100px;
+    --header-height: 90px;
     --header-height-scrolled: 80px;
 
     /* Transitions */
