@@ -116,6 +116,16 @@ function initCounterAnimation() {
     const counters = document.querySelectorAll('[data-count]');
     if (!counters.length) return;
 
+    // On mobile, just show static numbers without animation
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-count'));
+            counter.textContent = target.toLocaleString();
+        });
+        return;
+    }
+
     const counterOptions = {
         threshold: 0.5
     };
