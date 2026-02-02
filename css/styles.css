@@ -1691,12 +1691,20 @@ p:last-child {
     }
 
     /* Intro Section */
+    .intro-text {
+        text-align: center;
+    }
+
     .intro-lead {
         font-size: var(--text-base);
     }
 
     .intro-text p {
         font-size: var(--text-sm);
+    }
+
+    .link-arrow {
+        justify-content: center;
     }
 
     /* Why Cards */
