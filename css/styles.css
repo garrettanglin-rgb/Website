@@ -1537,6 +1537,19 @@ p:last-child {
         min-height: 200px;
     }
 
+    .practice-card-bg {
+        opacity: 0.6;
+    }
+
+    .practice-card-overlay {
+        background: linear-gradient(
+            to top,
+            rgba(26, 42, 74, 0.9) 0%,
+            rgba(26, 42, 74, 0.6) 50%,
+            rgba(26, 42, 74, 0.4) 100%
+        );
+    }
+
     .practice-card-content {
         padding: var(--space-4);
     }
@@ -1657,11 +1670,11 @@ p:last-child {
     }
 
     .hero-title {
-        font-size: var(--text-3xl);
+        font-size: 1.75rem;
     }
 
     .hero-description {
-        font-size: var(--text-sm);
+        font-size: var(--text-base);
     }
 
     .hero-subtitle {
