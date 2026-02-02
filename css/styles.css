@@ -1459,12 +1459,12 @@ p:last-child {
     }
 
     .logo-img {
-        height: 60px;
-        max-width: 250px;
+        height: 75px;
+        max-width: 280px;
     }
 
     .header.scrolled .logo-img {
-        height: 50px;
+        height: 60px;
     }
 
     .mobile-toggle {
