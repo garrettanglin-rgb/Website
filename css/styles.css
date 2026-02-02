@@ -219,6 +219,10 @@ p:last-child {
     margin-bottom: var(--space-3);
 }
 
+.section-dark .section-subtitle {
+    color: var(--color-accent);
+}
+
 .section-title {
     margin-bottom: var(--space-4);
 }
