@@ -691,7 +691,7 @@ p:last-child {
     font-size: var(--text-5xl);
     font-weight: 600;
     color: var(--color-primary);
-    display: block;
+    display: inline;
 }
 
 .stat-prefix {
