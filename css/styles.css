@@ -690,6 +690,13 @@ p:last-child {
     display: block;
 }
 
+.stat-prefix {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: 600;
+    color: var(--color-accent-text);
+}
+
 .stat-suffix {
     font-family: var(--font-heading);
     font-size: var(--text-3xl);
