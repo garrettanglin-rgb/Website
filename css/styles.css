@@ -14,10 +14,10 @@
     --color-accent-light: #f5f3f1;   /* Very light grey */
     --color-accent-text: #2d4a7c;    /* Navy for text accents */
     --color-white: #ffffff;
-    --color-off-white: #f8f9fa;
-    --color-gray-100: #f1f3f5;
-    --color-gray-200: #e9ecef;
-    --color-gray-300: #dee2e6;
+    --color-off-white: #f9f7f5;      /* Warm off-white */
+    --color-gray-100: #f0ebe6;       /* Warm light grey */
+    --color-gray-200: #e5dfda;       /* Warm medium grey */
+    --color-gray-300: #d9d2cc;       /* Warm grey */
     --color-gray-400: #ced4da;
     --color-gray-500: #adb5bd;
     --color-gray-600: #6c757d;
