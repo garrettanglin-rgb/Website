@@ -414,11 +414,15 @@ p:last-child {
 }
 
 .logo-img {
-    height: 95px;
+    height: 70px;
     width: auto;
     max-width: 380px;
     object-fit: contain;
-    transition: opacity var(--transition-fast);
+    transition: height var(--transition-base), opacity var(--transition-fast);
+}
+
+.header.scrolled .logo-img {
+    height: 50px;
 }
 
 .logo:hover .logo-img {
