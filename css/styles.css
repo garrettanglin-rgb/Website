@@ -717,30 +717,60 @@ p:last-child {
 }
 
 .practice-card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
     border-radius: var(--radius-lg);
-    padding: var(--space-8);
-    text-align: center;
+    overflow: hidden;
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
     transition: all var(--transition-base);
 }
 
-.practice-card:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--color-accent);
-    transform: translateY(-4px);
+.practice-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    transition: all 0.4s ease;
 }
 
-.practice-icon {
-    width: 56px;
-    height: 56px;
-    margin: 0 auto var(--space-5);
-    color: var(--color-accent);
+.practice-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(26, 42, 74, 0.95) 0%,
+        rgba(26, 42, 74, 0.7) 50%,
+        rgba(26, 42, 74, 0.5) 100%
+    );
+    transition: all 0.4s ease;
 }
 
-.practice-icon svg {
+.practice-card-content {
+    position: relative;
+    z-index: 1;
+    padding: var(--space-6);
     width: 100%;
-    height: 100%;
+}
+
+.practice-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.practice-card:hover .practice-card-bg {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+.practice-card:hover .practice-card-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(26, 42, 74, 0.9) 0%,
+        rgba(26, 42, 74, 0.5) 50%,
+        rgba(26, 42, 74, 0.3) 100%
+    );
 }
 
 .practice-title {
@@ -751,8 +781,9 @@ p:last-child {
 
 .practice-excerpt {
     font-size: var(--text-sm);
-    color: var(--color-gray-400);
+    color: var(--color-gray-300);
     margin-bottom: var(--space-4);
+    line-height: 1.6;
 }
 
 .practice-link {
@@ -761,10 +792,11 @@ p:last-child {
     color: var(--color-accent);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    transition: all var(--transition-fast);
 }
 
 .practice-card:hover .practice-link {
-    text-decoration: underline;
+    color: var(--color-white);
 }
 
 /* ============================================
