@@ -1518,6 +1518,10 @@ p:last-child {
         grid-template-columns: 1fr;
     }
 
+    .insights-grid-text-only {
+        grid-template-columns: 1fr;
+    }
+
     .insight-featured {
         grid-column: auto;
         grid-row: auto;
@@ -2240,6 +2244,40 @@ p:last-child {
     font-weight: 500;
     color: var(--color-accent-text);
     font-style: italic;
+}
+
+/* Text-only insight cards (no images) */
+.insight-card-large.insight-card-text-only {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+}
+
+.insights-grid-text-only {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+.insights-grid-text-only .insight-card {
+    padding: var(--space-6);
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.insights-grid-text-only .insight-card .insight-excerpt {
+    flex-grow: 1;
+}
+
+.insights-articles-text-only .insight-article-card {
+    padding: var(--space-6);
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-lg);
+}
+
+.insights-articles-text-only .insight-article-content {
+    padding: 0;
 }
 
 .insights-articles-grid {
