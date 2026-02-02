@@ -413,6 +413,12 @@ p:last-child {
     letter-spacing: 0.1em;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Navigation */
 .nav-list {
     display: flex;
