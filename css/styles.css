@@ -1951,20 +1951,24 @@ p:last-child {
     }
 
     .practice-detail-sidebar {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: flex-start;
-        text-align: left;
-        gap: var(--space-4);
+        text-align: center;
     }
 
     .practice-detail-icon {
         width: 50px;
         height: 50px;
-        margin-bottom: 0;
+        margin-bottom: var(--space-2);
     }
 
     .practice-detail-title {
         font-size: var(--text-xl);
+    }
+
+    .practice-detail-content {
+        text-align: center;
     }
 }
 
