@@ -63,8 +63,8 @@
     /* Layout */
     --container-max: 1280px;
     --container-narrow: 900px;
-    --header-height: 90px;
-    --header-height-scrolled: 70px;
+    --header-height: 100px;
+    --header-height-scrolled: 80px;
 
     /* Transitions */
     --transition-fast: 150ms ease;
@@ -414,7 +414,7 @@ p:last-child {
 }
 
 .logo-img {
-    height: 70px;
+    height: 95px;
     width: auto;
     max-width: 380px;
     object-fit: contain;
@@ -422,7 +422,7 @@ p:last-child {
 }
 
 .header.scrolled .logo-img {
-    height: 50px;
+    height: 70px;
 }
 
 .logo:hover .logo-img {
