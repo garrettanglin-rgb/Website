@@ -558,7 +558,7 @@ p:last-child {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=2000&q=80');
+    background-image: url('../images/hero-courthouse.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
