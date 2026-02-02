@@ -1260,8 +1260,8 @@ p:last-child {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-8);
+    grid-template-columns: auto auto;
+    gap: var(--space-16);
 }
 
 .footer-column h4 {
