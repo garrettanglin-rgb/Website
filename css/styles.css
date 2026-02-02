@@ -2654,6 +2654,14 @@ p:last-child {
         grid-template-columns: 1fr;
     }
 
+    .insights-grid-text-only {
+        grid-template-columns: 1fr;
+    }
+
+    .insights-grid-text-only .insight-card {
+        padding: var(--space-5);
+    }
+
     .newsletter-content {
         grid-template-columns: 1fr;
         text-align: center;
