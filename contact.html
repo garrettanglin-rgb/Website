@@ -139,7 +139,8 @@
                         <h3>Send Us a Message</h3>
                         <p>Fill out the form below and we'll get back to you as soon as possible.</p>
 
-                        <form class="contact-form" id="contact-form">
+                        <form class="contact-form" id="contact-form" name="contact-page" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact-page">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="first-name">First Name *</label>
