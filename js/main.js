@@ -183,23 +183,22 @@ function initContactForm() {
 
         // Gather form data
         const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
 
-        // Simulate form submission (replace with actual endpoint)
         try {
-            // In production, replace with actual form handling
-            // await fetch('/api/contact', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify(data)
-            // });
+            // Submit to Netlify Forms
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            });
 
-            // Simulate delay
-            await new Promise(resolve => setTimeout(resolve, 1500));
-
-            // Show success message
-            showFormMessage(form, 'success', 'Thank you for your message. We will be in touch shortly.');
-            form.reset();
+            if (response.ok) {
+                // Show success message
+                showFormMessage(form, 'success', 'Thank you for your message. We will be in touch shortly.');
+                form.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
 
         } catch (error) {
             // Show error message
